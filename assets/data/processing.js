@@ -1,71 +1,3 @@
-// Select countries
-
-const SouthAmerica = [
-  'Ecuador',
-  'Colombia',
-  'Paraguay',
-  'Uruguay',
-  'Guyana',
-  'Venezuela, RB',
-  'Peru',
-  'Panama',
-  'Cuba'
-];
-
-const NorthAmerica = [
-  'Mexico',
-  'United States',
-  'Greenland',
-  'Iceland'
-]
-
-const Europe = [
-  'Norway',
-  'Greece',
-  'Serbia',
-  'Croatia',
-  'Spain',
-  'Portugal',
-  'Germany',
-  'Italy',
-  'Ukraine',
-  'Denmark',
-  'Romania'
-]
-
-const Africa = [
-  'Chad',
-  'Nigeria',
-  'Namibia',
-  'Zambia',
-  'South Sudan',
-  'Somalia',
-  'Uganda',
-  'Kenya',
-  'Malawi',
-  'Comoros',
-  'Madagascar',
-  'Ethiopia',
-  'Yemen, Rep.',
-  'Sudan'
-];
-
-const Asia = [
-  'Pakistan',
-  'India',
-  'Nepal',
-  'Kazakhstan',
-  'Maldives',
-  'Sri Lanka',
-  'Mongolia',
-  'Thailand',
-  'Lao PDR',
-  'Cambodia',
-  'Vietnam',
-  'Singapore',
-  'Indonesia'
-]
-
 const Rest = [
   'New Caledonia',
   'New Zealand',
@@ -78,11 +10,6 @@ const Rest = [
 ]
 
 const selected = [
-  ...Asia,
-  ...Africa,
-  ...Europe,
-  ...NorthAmerica,
-  ...SouthAmerica,
   ...Rest
 ]
 
@@ -95,19 +22,6 @@ function selectCountries(list, countries) {
   })
 }
 
-
-
-
-// Connections
-
-const connections = {
-  'Colombia': ['Ecuador', 'Cuba', 'Mexico', 'Peru', 'Venezuela, RB', 'Guyana', 'United States'],
-  'South Sudan': ['Nigeria', 'Sudan', 'Kenya', 'Uganda', 'Zambia', 'Malawi', 'Ethiopia', 'Somalia', 'Madagascar', 'Yemen, Rep.'],
-  'India': ['Pakistan', 'Kazakhstan', 'Maldives', 'Sri Lanka', 'Vietnam', 'Thailand'],
-  'Thailand': ['Singapore', 'Indonesia', 'Nepal', 'Vietnam', 'Sri Lanka', 'Cambodia', 'Pakistan'],
-  'Panama': ['Cuba', 'Mexico', 'Ecuador', 'Colombia', 'Peru', 'Venezuela, RB', 'United States'],
-  'Fiji': ['Tuvalu', 'Nauru', 'Kiribati', 'Tonga', 'New Caledonia', 'New Zealand']
-}
 
 
 function getCountry(name, countries) {

@@ -1,1 +1,142 @@
-data.countries = [{"name":"Pakistan","latitude":"30.5167","longitude":"72.8"},{"name":"India","latitude":"28.6353","longitude":"77.225"},{"name":"Nepal","latitude":"27.6939","longitude":"85.3157"},{"name":"Kazakhstan","latitude":"51.1879","longitude":"71.4382"},{"name":"Maldives","latitude":"4.1742","longitude":"73.5109"},{"name":"Sri Lanka","latitude":"6.92148","longitude":"79.8528"},{"name":"Mongolia","latitude":"47.9129","longitude":"106.937"},{"name":"Thailand","latitude":"13.7308","longitude":"100.521"},{"name":"Lao PDR","latitude":"18.5826","longitude":"102.177"},{"name":"Cambodia","latitude":"11.5556","longitude":"104.874"},{"name":"Vietnam","latitude":"21.0069","longitude":"105.825"},{"name":"Singapore","latitude":"1.28941","longitude":"103.85"},{"name":"Indonesia","latitude":"-6.19752","longitude":"106.83"},{"name":"Chad","latitude":"12.1048","longitude":"15.0445"},{"name":"Nigeria","latitude":"9.05804","longitude":"7.48906"},{"name":"Namibia","latitude":"-22.5648","longitude":"17.0931"},{"name":"Zambia","latitude":"-15.3982","longitude":"28.2937"},{"name":"South Sudan","latitude":"4.85","longitude":"31.6"},{"name":"Somalia","latitude":"2.07515","longitude":"45.3254"},{"name":"Uganda","latitude":"0.314269","longitude":"32.5729"},{"name":"Kenya","latitude":"-1.27975","longitude":"36.8126"},{"name":"Malawi","latitude":"-13.9899","longitude":"33.7703"},{"name":"Comoros","latitude":"-11.6986","longitude":"43.2418"},{"name":"Madagascar","latitude":"-20.4667","longitude":"45.7167"},{"name":"Ethiopia","latitude":"9.02274","longitude":"38.7468"},{"name":"Yemen, Rep.","latitude":"15.352","longitude":"44.2075"},{"name":"Sudan","latitude":"15.5932","longitude":"32.5363"},{"name":"Norway","latitude":"59.9138","longitude":"10.7387"},{"name":"Greece","latitude":"37.9792","longitude":"23.7166"},{"name":"Serbia","latitude":"44.8024","longitude":"20.4656"},{"name":"Croatia","latitude":"45.8069","longitude":"15.9614"},{"name":"Spain","latitude":"40.4167","longitude":"-3.70327"},{"name":"Portugal","latitude":"38.7072","longitude":"-9.13552"},{"name":"Germany","latitude":"52.5235","longitude":"13.4115"},{"name":"Italy","latitude":"41.8955","longitude":"12.4823"},{"name":"Ukraine","latitude":"50.4536","longitude":"30.5038"},{"name":"Denmark","latitude":"55.6763","longitude":"12.5681"},{"name":"Romania","latitude":"44.4479","longitude":"26.0979"},{"name":"Mexico","latitude":"19.427","longitude":"-99.1276"},{"name":"United States","latitude":"38.8895","longitude":"-77.032"},{"name":"Greenland","latitude":"64.1836","longitude":"-51.7214"},{"name":"Iceland","latitude":"64.1353","longitude":"-21.8952"},{"name":"Ecuador","latitude":"-0.229498","longitude":"-78.5243"},{"name":"Colombia","latitude":"4.60987","longitude":"-74.082"},{"name":"Paraguay","latitude":"-25.3005","longitude":"-57.6362"},{"name":"Uruguay","latitude":"-34.8941","longitude":"-56.0675"},{"name":"Guyana","latitude":"6.80461","longitude":"-58.1548"},{"name":"Venezuela, RB","latitude":"9.08165","longitude":"-69.8371"},{"name":"Peru","latitude":"-12.0931","longitude":"-77.0465"},{"name":"Panama","latitude":"8.99427","longitude":"-79.5188"},{"name":"Cuba","latitude":"23.1333","longitude":"-82.3667"},{"name":"New Caledonia","latitude":"-22.2677","longitude":"166.464"},{"name":"New Zealand","latitude":"-41.2865","longitude":"174.776"},{"name":"Tonga","latitude":"-21.136","longitude":"-175.216"},{"name":"Fiji","latitude":"-18.1149","longitude":"178.399"},{"name":"Nauru","latitude":"-0.5477","longitude":"166.920867"},{"name":"Solomon Islands","latitude":"-9.42676","longitude":"159.949"},{"name":"Kiribati","latitude":"1.32905","longitude":"172.979"},{"name":"Tuvalu","latitude":"-8.6314877","longitude":"179.089567"}]
+const countriesRaw = [{
+    "id": "ARE",
+    "iso2Code": "AE",
+    "name": "United Arab Emirates",
+    "region": {"id": "MEA", "iso2code": "ZQ", "value": "Middle East & North Africa"},
+    "adminregion": {"id": "", "iso2code": "", "value": ""},
+    "incomeLevel": {"id": "HIC", "iso2code": "XD", "value": "High income"},
+    "lendingType": {"id": "LNX", "iso2code": "XX", "value": "Not classified"},
+    "capitalCity": "Abu Dhabi",
+    "longitude": "54.3705",
+    "latitude": "24.4764"
+}, {
+    "id": "CHN",
+    "iso2Code": "CN",
+    "name": "China",
+    "region": {"id": "EAS", "iso2code": "Z4", "value": "East Asia & Pacific"},
+    "adminregion": {"id": "EAP", "iso2code": "4E", "value": "East Asia & Pacific (excluding high income)"},
+    "incomeLevel": {"id": "UMC", "iso2code": "XT", "value": "Upper middle income"},
+    "lendingType": {"id": "IBD", "iso2code": "XF", "value": "IBRD"},
+    "capitalCity": "Beijing",
+    "longitude": "116.286",
+    "latitude": "40.0495"
+}, {
+    "id": "CZE",
+    "iso2Code": "CZ",
+    "name": "Czechia",
+    "region": {"id": "ECS", "iso2code": "Z7", "value": "Europe & Central Asia"},
+    "adminregion": {"id": "", "iso2code": "", "value": ""},
+    "incomeLevel": {"id": "HIC", "iso2code": "XD", "value": "High income"},
+    "lendingType": {"id": "LNX", "iso2code": "XX", "value": "Not classified"},
+    "capitalCity": "Prague",
+    "longitude": "14.4205",
+    "latitude": "50.0878"
+}, {
+    "id": "DEU",
+    "iso2Code": "DE",
+    "name": "Germany",
+    "region": {"id": "ECS", "iso2code": "Z7", "value": "Europe & Central Asia"},
+    "adminregion": {"id": "", "iso2code": "", "value": ""},
+    "incomeLevel": {"id": "HIC", "iso2code": "XD", "value": "High income"},
+    "lendingType": {"id": "LNX", "iso2code": "XX", "value": "Not classified"},
+    "capitalCity": "Berlin",
+    "longitude": "13.4115",
+    "latitude": "52.5235"
+}, {
+    "id": "FRA",
+    "iso2Code": "FR",
+    "name": "France",
+    "region": {"id": "ECS", "iso2code": "Z7", "value": "Europe & Central Asia"},
+    "adminregion": {"id": "", "iso2code": "", "value": ""},
+    "incomeLevel": {"id": "HIC", "iso2code": "XD", "value": "High income"},
+    "lendingType": {"id": "LNX", "iso2code": "XX", "value": "Not classified"},
+    "capitalCity": "Paris",
+    "longitude": "2.35097",
+    "latitude": "48.8566"
+}, {
+    "id": "GBR",
+    "iso2Code": "GB",
+    "name": "United Kingdom",
+    "region": {"id": "ECS", "iso2code": "Z7", "value": "Europe & Central Asia"},
+    "adminregion": {"id": "", "iso2code": "", "value": ""},
+    "incomeLevel": {"id": "HIC", "iso2code": "XD", "value": "High income"},
+    "lendingType": {"id": "LNX", "iso2code": "XX", "value": "Not classified"},
+    "capitalCity": "London",
+    "longitude": "-0.126236",
+    "latitude": "51.5002"
+}, {
+    "id": "IND",
+    "iso2Code": "IN",
+    "name": "India",
+    "region": {"id": "SAS", "iso2code": "8S", "value": "South Asia"},
+    "adminregion": {"id": "SAS", "iso2code": "8S", "value": "South Asia"},
+    "incomeLevel": {"id": "LMC", "iso2code": "XN", "value": "Lower middle income"},
+    "lendingType": {"id": "IBD", "iso2code": "XF", "value": "IBRD"},
+    "capitalCity": "New Delhi",
+    "longitude": "77.225",
+    "latitude": "28.6353"
+}, {
+    "id": "ITA",
+    "iso2Code": "IT",
+    "name": "Italy",
+    "region": {"id": "ECS", "iso2code": "Z7", "value": "Europe & Central Asia"},
+    "adminregion": {"id": "", "iso2code": "", "value": ""},
+    "incomeLevel": {"id": "HIC", "iso2code": "XD", "value": "High income"},
+    "lendingType": {"id": "LNX", "iso2code": "XX", "value": "Not classified"},
+    "capitalCity": "Rome",
+    "longitude": "12.4823",
+    "latitude": "41.8955"
+}, {
+    "id": "USA",
+    "iso2Code": "US",
+    "name": "United States",
+    "region": {"id": "NAC", "iso2code": "XU", "value": "North America"},
+    "adminregion": {"id": "", "iso2code": "", "value": ""},
+    "incomeLevel": {"id": "HIC", "iso2code": "XD", "value": "High income"},
+    "lendingType": {"id": "LNX", "iso2code": "XX", "value": "Not classified"},
+    "capitalCity": "Washington D.C.",
+    "longitude": "-77.032",
+    "latitude": "38.8895"
+}, {
+    "id": "UZB",
+    "iso2Code": "UZ",
+    "name": "Uzbekistan",
+    "region": {"id": "ECS", "iso2code": "Z7", "value": "Europe & Central Asia"},
+    "adminregion": {"id": "ECA", "iso2code": "7E", "value": "Europe & Central Asia (excluding high income)"},
+    "incomeLevel": {"id": "LMC", "iso2code": "XN", "value": "Lower middle income"},
+    "lendingType": {"id": "IDB", "iso2code": "XH", "value": "Blend"},
+    "capitalCity": "Tashkent",
+    "longitude": "69.269",
+    "latitude": "41.3052"
+}, {
+    "id": "VNM",
+    "iso2Code": "VN",
+    "name": "Vietnam",
+    "region": {"id": "EAS", "iso2code": "Z4", "value": "East Asia & Pacific"},
+    "adminregion": {"id": "EAP", "iso2code": "4E", "value": "East Asia & Pacific (excluding high income)"},
+    "incomeLevel": {"id": "LMC", "iso2code": "XN", "value": "Lower middle income"},
+    "lendingType": {"id": "IBD", "iso2code": "XF", "value": "IBRD"},
+    "capitalCity": "Hanoi",
+    "longitude": "105.825",
+    "latitude": "21.0069"
+}, {
+    "id": "AUT", "iso2Code": "AT", "name": "Austria", "region": {
+        "id": "ECS", "iso2code": "Z7", "value": "Europe & Central Asia"
+    }, "adminregion": {
+        "id": "", "iso2code": "", "value": ""
+    }, "incomeLevel": {
+        "id": "HIC", "iso2code": "XD", "value": "High income"
+    }, "lendingType": {
+        "id": "LNX", "iso2code": "XX", "value": "Not classified"
+    }, "capitalCity": "Vienna", "longitude": "16.3798", "latitude": "48.2201"
+}];
+
+let names = [];
+
+data.countries = countriesRaw.map(country => {
+    const {name, latitude, longitude, iso2Code} = country;
+    names.push(name)
+    return {name, latitude, longitude, id: iso2Code};
+});
+
+alert(names)
