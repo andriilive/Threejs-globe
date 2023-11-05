@@ -135,7 +135,7 @@ let names = [];
 
 data.countries = countriesRaw.map(country => {
     const {name, latitude, longitude, iso2Code} = country;
-    names.push(name)
+    names.push(iso2Code)
     return {name, latitude, longitude, id: iso2Code};
 });
 

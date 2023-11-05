@@ -16,7 +16,7 @@ const config = {
 		globe: 0.001
 	},
 	colors: {
-		globeDotColor: 'rgb(203, 168, 0)',
+		globeDotColor: 'rgb(158, 255, 0)',
 		globeMarkerColor: 'rgb(143, 216, 216)',
 		globeMarkerGlow: 'rgb(255, 255, 255)',
 		globeLines: 'rgb(255, 255, 255)',
@@ -68,5 +68,5 @@ const countries = {
 }
 
 const animations = {
-  rotateGlobe: true
+  rotateGlobe: false
 }
